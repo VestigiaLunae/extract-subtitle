@@ -27,7 +27,7 @@ def generate_srt(json_input_file=None):
         body: str = ocr_dict.get(str(frame_number)).strip()
 
         if body:
-            start_time: datetime.timedelta = datetime.timedelta(seconds=frame_number)
+            start_time: datetime.timedelta = datetime.timedelta(seconds=int(frame_number) - 1)
             end_time = start_time + datetime.timedelta(milliseconds=1000)
 
             sub = srt.Subtitle(None, start_time, end_time, body)

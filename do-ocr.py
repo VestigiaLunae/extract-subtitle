@@ -25,7 +25,7 @@ def ocr_file(image):
 
         # run the ocr command on the file, and capture the output from stdout
         # !! mac m1/m2 only: use the version from https://github.com/glowinthedark/macOCR/releases or the OCR binary in this repo
-        proc = subprocess.run(["/usr/local/bin/OCR", "zh", "false", "false", image.absolute()],
+        proc = subprocess.run(["/Users/misterms/ocr/OCR", "ko", "false", "false", image.absolute()],
                               stdout=subprocess.PIPE,
                               stderr=subprocess.PIPE)
 
