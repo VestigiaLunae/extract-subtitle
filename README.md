@@ -9,9 +9,6 @@ The workflow sequence run by the [do-all.sh](do-all.sh) script:
 2. Generate PNG snapshots (using `ffmpeg ... fps=1` — 1 snapshot per second)
 3. Optical Character Recognition using macOCR (Apple Silicon only) outputs JSON file.
 4. Convert JSON to SRT + normalize and deduplicate using https://github.com/cdown/srt.
-5. optional: Generate Chinese pinyin and traditional/simplified versions.
-6. optional: Translate with deepl.
-7. optional: Merge translation into the final SRT containing Hanzi Simplified + Hanzi Traditional + Pinyin + English.
 
 # NOTE
 
